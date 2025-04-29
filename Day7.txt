@@ -1,0 +1,17 @@
+CREATE TABLE Employees (
+  ID INT,
+  Name VARCHAR(255),
+  Department VARCHAR(255)
+);
+
+
+insert into Employees values(101,'Sima','IT');
+insert into Employees values(102,'Raju','Sales');
+insert into Employees values(103,'Mintu','IT');
+insert into Employees values(104,'Amit','IT');
+insert into Employees values(105,'Shiv','IT');
+insert into Employees values(106,'Mansi','Sales');
+insert into Employees values(107,'vidya','Sales');
+
+select * from employees;
+select count(id) as employees, Department from Employees group by Department having count(id)>2 order by department desc;
