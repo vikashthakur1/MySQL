@@ -1,0 +1,4 @@
+insert into Employees values(103,'Rachin','Rachin@gmail.com','seles','08/06/2004',4000.50, 1)
+insert into Employees values(104,'Mohit','Mohit@gmail.com','IT','11/07/2001',20000.50, 1)
+update Employees set salary =75000 where empid=102;
+delete from Employees where empid=101;
