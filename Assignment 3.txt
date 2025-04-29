@@ -1,0 +1,8 @@
+create database Company
+use Company;
+
+create table Employees(empid int, empname varchar(255), empemail varchar(255),empdep varchar(255),dob date, salary DECIMAL(10, 2),
+    IsActive BIT );
+
+insert into Employees values(101,'Mukesh','mukesh@gmail.com','seles','05/02/2002',51000.50, 1)
+insert into Employees values(102,'Sanny','Sanny@gmail.com','IT','03/01/2000',52000.50, 1)
