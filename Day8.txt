@@ -1,0 +1,22 @@
+
+select e.EmployeeID,e.EmployeeName, d.DepartmentID, d.DepartmentName 
+from Employee as e cross join Department as  d;
+
+select e.EmployeeID , e.EmployeeName ,d.DepartmentID, d.DepartmentName 
+from Employee e inner join Department d on e.DepartmentID =d.DepartmentID;
+
+(select e.EmployeeID, e.EmployeeName, e.DepartmentID,d.DepartmentID, d.DepartmentName
+from Employee as e left join Department as d
+on e.DepartmentID = d.DepartmentID)
+union (select e.EmployeeID, e.EmployeeName, e.DepartmentID,d.DepartmentID, d.DepartmentName
+from Employee as e right join Department as d
+on e.DepartmentID = d.DepartmentID)
+
+select e.EmployeeID, e.EmployeeName, e.DepartmentID,d.DepartmentID, d.DepartmentName
+from Employee as e left join Department as d
+on e.DepartmentID = d.DepartmentID;
+
+select e.EmployeeID, e.EmployeeName, e.DepartmentID,d.DepartmentID, d.DepartmentName
+from Employee e right join Department d
+on e.DepartmentID = d.DepartmentID
+
